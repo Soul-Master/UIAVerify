@@ -13,31 +13,20 @@
 //---------------------------------------------------------------------------
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Windows.Automation;
-using System.Diagnostics;
 using VisualUIAVerify.Controls;
 using VisualUIAVerify.Features;
 using VisualUIAVerify.Misc;
 using VisualUIAVerify.Win32;
-using System.Reflection;
 using System.Runtime.InteropServices;
 using Microsoft.Test.UIAutomation;
 using System.IO;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using Microsoft.Test.UIAutomation.Logging;
 
 namespace VisualUIAVerify.Forms
 {
-    /// <summary>
-    /// This class is main window of the application
-    /// </summary>
     public partial class MainWindow : Form
     {
         private ElementHighlighter _highlighter;
@@ -65,37 +54,9 @@ namespace VisualUIAVerify.Forms
             fadingRectangleHighlightingToolStripMenuItem.Tag = ElementHighlighterFactory.FadingBoundingRectangle;
             raysAndRectangleHighlightingToolStripMenuItem.Tag = ElementHighlighterFactory.BoundingRectangleAndRays;
             noneHighlightingToolStripMenuItem.Tag = ElementHighlighterFactory.None;
-
-            testsForSelectedAutomationElementToolStripMenuItem.Tag = TestsScope.SelectedElementTests;
-            allTestsToolStripMenuItem.Tag = TestsScope.AllTests;
-
-            automationElementTestsToolStripMenuItem.Tag = TestTypes.AutomationElementTest;
-            patternTestsToolStripMenuItem.Tag = TestTypes.PatternTest;
-            controlTestsToolStripMenuItem.Tag = TestTypes.ControlTest;
-
-            buildVerificationTestsToolStripMenuItem.Tag = TestPriorities.BuildVerificationTests;
-            priority0TestsToolStripMenuItem.Tag = TestPriorities.Priority0Tests;
-            priority1TestsToolStripMenuItem.Tag = TestPriorities.Priority1Tests;
-            priority2TestsToolStripMenuItem.Tag = TestPriorities.Priority2Tests;
-            priority3TestsToolStripMenuItem.Tag = TestPriorities.Priority3Tests;
-
-            overallToolStripButton.Tag = TestResultsControl.LogTypes.OverallResults;
-            allResultsToolStripButton.Tag = TestResultsControl.LogTypes.AllResults;
-            FullDetailToolStripButton.Tag = TestResultsControl.LogTypes.FullDetailResults;
-            xmlToolStripButton.Tag = TestResultsControl.LogTypes.XmlOutput;
-
+            
             showCategoriesToolStripButton.Tag = PropertySort.Categorized;
             sortAlphabeticalToolStripButton.Tag = PropertySort.Alphabetical;
-
-            goLeftToolStripButton.Tag = MovementDirections.Left;
-            goUpToolStripButton.Tag = MovementDirections.Up;
-            goRightToolStripButton.Tag = MovementDirections.Right;
-            goDownToolStripButton.Tag = MovementDirections.Down;
-
-            goLeftToolStripMenuItem.Tag = MovementDirections.Left;
-            goUpToolStripMenuItem.Tag = MovementDirections.Up;
-            goRightToolStripMenuItem.Tag = MovementDirections.Right;
-            goDownToolStripMenuItem.Tag = MovementDirections.Down;
 
             //Initialize HighLighting
             switch (this._applicationState.HighLight)
@@ -146,15 +107,6 @@ namespace VisualUIAVerify.Forms
             //Initilize Automation Tests control
             _automationElementTree.RootElement = AutomationElement.RootElement;
 
-            //Initilize Automation Element Tree: set root element
-            _automationTests.SelectedElement = AutomationElement.RootElement;
-
-            _automationTests.Scope = TestsScope.SelectedElementTests;
-            _automationTests.Types = TestTypes.AutomationElementTest | TestTypes.PatternTest | TestTypes.ControlTest;
-            _automationTests.Priorities = TestPriorities.Priority0Tests | TestPriorities.Priority1Tests |
-                    TestPriorities.Priority2Tests | TestPriorities.Priority3Tests;
-
-            _automationTests.ShowTests();
             RegisterHotKeys();
 
             if (args == null || (Array.IndexOf<string>(args, "NOCLIENTSIDEPROVIDER") != -1))
@@ -213,7 +165,7 @@ namespace VisualUIAVerify.Forms
 
         private void ShowLog()
         {
-            _testResults.ReadAndRefreshLog();
+
         }
 
         #region hot keys hook
@@ -230,14 +182,6 @@ namespace VisualUIAVerify.Forms
                 new HotKey("Ctrl+Shift", "F8", new EventHandler(this.goToNextSiblingToolStripButton_Click)),
                 new HotKey("Ctrl+Shift", "F9", new EventHandler(this.goToPrevSiblingToolStripButton_Click)),
                 new HotKey("Ctrl+Shift", "F10", new EventHandler(this.goToLastChildToolStripButton_Click)),
-
-                new HotKey("Ctrl+Shift", "7", new EventHandler(this.leftArrowToolStripMenuItem_Click)),
-                new HotKey("Ctrl+Shift", "8", new EventHandler(this.upArrowToolStripMenuItem_Click)),
-                new HotKey("Ctrl+Shift", "9", new EventHandler(this.downArrowToolStripMenuItem_Click)),
-                new HotKey("Ctrl+Shift", "0", new EventHandler(this.rightArrowToolStripMenuItem_Click)),
-
-                new HotKey("Ctrl+Shift", "R", new EventHandler(this.runSelectedTestToolStripMenuItem_Click)),
-                new HotKey("Ctrl+Shift", "E", new EventHandler(this.runSelectedTestsOnSelectedElementAndAllChildrenToolStripMenuItem_Click)),
 
                 new HotKey("Ctrl+Shift", "T", new EventHandler(this.alwaysOnTopHotKey)),
                 new HotKey("Ctrl+Shift", "H", new EventHandler(this.hoverModeHotKey)),
@@ -276,36 +220,8 @@ namespace VisualUIAVerify.Forms
             }
             base.WndProc(ref msg);
         }
-
-
-
+        
         #endregion
-
-        private void SetLogNavigationButtons()
-        {
-            backToolStripButton.Enabled = _testResults.CanGoBack;
-            forwardToolStripButton.Enabled = _testResults.CanGoForward;
-        }
-
-        private void RunSelectedTest()
-        {
-            try
-            {
-                Console.WriteLine(_automationTests.SelectedElement.Current.LocalizedControlType);
-                AutomationTestManager.RunTest(_automationTests.SelectedTests, _automationTests.SelectedElement, true, this);
-                ShowLog();
-            }
-            catch (Exception)
-            {
-                // bug: if you select AutomationElement instead of the tests
-            }
-        }
-
-        private void RunSelectedTestOnAllChildren()
-        {
-            AutomationTestManager.RunTestOnAllChildren(_automationTests.SelectedTests, _automationTests.SelectedElement, true, this);
-            ShowLog();
-        }
 
         #region logging
 
@@ -404,36 +320,6 @@ namespace VisualUIAVerify.Forms
             }
         }
 
-        private void parentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //resend message
-            goToParentToolStripButton_Click(null, EventArgs.Empty);
-        }
-
-        private void firstChildToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //resend message
-            goToFirstChildToolStripButton_Click(null, EventArgs.Empty);
-        }
-
-        private void nextSiblingToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //resend message
-            goToNextSiblingToolStripButton_Click(null, EventArgs.Empty);
-        }
-
-        private void prevSiblingToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //resend message
-            goToPrevSiblingToolStripButton_Click(null, EventArgs.Empty);
-        }
-
-        private void lastChildToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //resend message
-            goToLastChildToolStripButton_Click(null, EventArgs.Empty);
-        }
-
         private void FocusTrackingToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
             if (FocusTrackingToolStripMenuItem.Checked)
@@ -494,8 +380,7 @@ namespace VisualUIAVerify.Forms
 
             if (selectedNode != null)
                 selectedElement = selectedNode.AutomationElement;
-
-            _automationTests.SelectedElement = selectedElement;
+            
             _automationElementPropertyGrid.AutomationElement = selectedElement;
         }
 
@@ -505,8 +390,7 @@ namespace VisualUIAVerify.Forms
 
             hoverModeToolStripMenuItem_Click(sender, e);
         }
-
-
+        
         private void hoverModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this._applicationState.ModeHoverMode = hoverModeToolStripMenuItem.Checked;
@@ -516,132 +400,7 @@ namespace VisualUIAVerify.Forms
             else
                 this._automationElementTree.StopHoverMode();
         }
-
-        private void testsScopeToolStrip_Click(object sender, EventArgs e)
-        {
-            ToolStripMenuItem senderMenu = (ToolStripMenuItem)sender;
-
-            //if item is checked then exit, the item can be unchecked only by checking another item
-            if (senderMenu.Checked)
-                return;
-
-            //check new item, uncheck old items
-            allTestsToolStripMenuItem.Checked = false;
-            testsForSelectedAutomationElementToolStripMenuItem.Checked = false;
-            senderMenu.Checked = true;
-
-            Debug.Assert(senderMenu.Tag is TestsScope, "MainWindow design is broken!");
-            TestsScope scope = (TestsScope)senderMenu.Tag;
-
-            _automationTests.Scope = scope;
-        }
-
-        private void testTypesMenuToolStrip_Click(object sender, EventArgs e)
-        {
-            ToolStripMenuItem senderMenu = (ToolStripMenuItem)sender;
-
-            Debug.Assert(senderMenu.Tag is TestTypes, "MainWindow design is broken!");
-            TestTypes testType = (TestTypes)senderMenu.Tag;
-
-            TestTypes newValue = _automationTests.Types;
-
-            if (senderMenu.Checked)
-                newValue |= testType; //add flag
-            else
-                newValue &= ~testType; //remove flag
-
-            _automationTests.Types = newValue;
-        }
-
-        private void testPrioritiesToolStrip_Click(object sender, EventArgs e)
-        {
-            ToolStripMenuItem senderMenu = (ToolStripMenuItem)sender;
-
-            Debug.Assert(senderMenu.Tag is TestPriorities, "MainWindow design is broken!");
-            TestPriorities testPriority = (TestPriorities)senderMenu.Tag;
-
-            TestPriorities newValue = _automationTests.Priorities;
-
-            // remove TestPriorities.PriorityAllTests tests
-            newValue &= ~TestPriorities.OnlyPriorityAllTests;
-
-            if (senderMenu.Checked)
-                newValue |= testPriority; //add flag
-            else
-                newValue &= ~testPriority; //remove flag
-
-            _automationTests.Priorities = newValue;
-
-        }
-
-        private void _automationTests_RunTestRequired(object sender, EventArgs e)
-        {
-            RunSelectedTest();
-        }
-
-
-        private void _automationTests_RunTestOnAllChildrenRequired(object sender, EventArgs e)
-        {
-            AutomationTestManager.RunTestOnAllChildren(_automationTests.SelectedTests, _automationTests.SelectedElement, true, this);
-            ShowLog();
-        }
-
-        private void _testResultsToolStrip_ButtonClick(object sender, EventArgs e)
-        {
-            ToolStripButton button = (ToolStripButton)sender;
-
-            foreach (ToolStripItem item in _testResultsToolStrip.Items)
-            {
-                if (item is ToolStripButton)
-                    ((ToolStripButton)item).Checked = false;
-            }
-
-            button.Checked = true;
-
-            _testResults.LogType = (TestResultsControl.LogTypes)button.Tag;
-
-            _testResults.RefreshLog();
-        }
-
-        private void _testResults_NavigationChanged(object sender, NavigationChangedEventArgs e)
-        {
-            foreach (ToolStripItem item in _testResultsToolStrip.Items)
-            {
-                ToolStripButton button = item as ToolStripButton;
-                if (button != null)
-                {
-                    if (button.Tag is TestResultsControl.LogTypes)
-                    {
-                        button.Checked = ((TestResultsControl.LogTypes)button.Tag) == e.LogType;
-                    }
-                }
-            }
-
-            SetLogNavigationButtons();
-        }
-
-        private void backToolStripButton_Click(object sender, EventArgs e)
-        {
-            _testResults.GoBack();
-            SetLogNavigationButtons();
-        }
-
-        private void forwardToolStripButton_Click(object sender, EventArgs e)
-        {
-            _testResults.GoForward();
-            SetLogNavigationButtons();
-        }
-
-        private void quickFindToolStripButton_Click(object sender, EventArgs e)
-        {
-            _testResults.ShowQuickFind();
-        }
-
-        private void openInNewWindowToolStripButton_Click(object sender, EventArgs e)
-        {
-            _testResults.OpenInNewWindow();
-        }
-
+        
         private void propertyPaneToolStripButton_Click(object sender, EventArgs e)
         {
             ToolStripButton button = sender as ToolStripButton;
@@ -687,61 +446,7 @@ namespace VisualUIAVerify.Forms
                 _automationElementTree.StopFocusTracing();
 
         }
-
-        private void testArrowButton_Click(object sender, EventArgs e)
-        {
-            ToolStripButton button = sender as ToolStripButton;
-
-            if (button != null)
-            {
-                MovementDirections direction = (MovementDirections)button.Tag;
-                _automationTests.MoveToTest(direction);
-            }
-        }
-
-        private void testArrowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
-
-            if (menuItem != null)
-            {
-                MovementDirections direction = (MovementDirections)menuItem.Tag;
-                _automationTests.MoveToTest(direction);
-            }
-        }
-
-        private void leftArrowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _automationTests.MoveToTest(MovementDirections.Left);
-        }
-        private void rightArrowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _automationTests.MoveToTest(MovementDirections.Right);
-        }
-        private void upArrowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _automationTests.MoveToTest(MovementDirections.Up);
-        }
-        private void downArrowToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _automationTests.MoveToTest(MovementDirections.Down);
-        }
-
-        private void runTestToolStripButton_Click(object sender, EventArgs e)
-        {
-            RunSelectedTest();
-        }
-
-        private void runSelectedTestToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RunSelectedTest();
-        }
-
-        private void refreshTestsToolStripButton_Click(object sender, EventArgs e)
-        {
-            _automationTests.RefreshTests(true);
-        }
-
+        
         private void refreshPropertyPaneToolStripButton_Click(object sender, EventArgs e)
         {
             _automationElementPropertyGrid.RefreshValues();
@@ -751,17 +456,7 @@ namespace VisualUIAVerify.Forms
         {
             _automationElementPropertyGrid.ExpandAll = expandAllToolStripButton.Checked;
         }
-
-        private void runTestOnAllChildrenToolStripButton_Click(object sender, EventArgs e)
-        {
-            RunSelectedTestOnAllChildren();
-        }
-
-        private void runSelectedTestsOnSelectedElementAndAllChildrenToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RunSelectedTestOnAllChildren();
-        }
-
+        
         private void aboutVisualUIAVerifyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AboutWindow().ShowDialog(this);
@@ -824,25 +519,7 @@ namespace VisualUIAVerify.Forms
                 throw error;
             }
         }
-
-        private void filterKnownIssuesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            filterKnownIssuesToolStripMenuItem.Checked = !filterKnownIssuesToolStripMenuItem.Checked;
-            TestRuns.FilterOutBugs = filterKnownIssuesToolStripMenuItem.Checked;
-            if (TestRuns.FilterOutBugs)
-            {
-                if (openFilterFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    _filterFileName = openFilterFileDialog.FileName;
-                    TestRuns.BugFilterFile = _filterFileName;
-                }
-            }
-            else
-            {
-                TestRuns.BugFilterFile = String.Empty;
-            }
-        }
-
+        
         private void saveLogToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (saveLogFileDialog.ShowDialog() == DialogResult.OK)
@@ -850,6 +527,5 @@ namespace VisualUIAVerify.Forms
                 UIVerifyLogger.GenerateXMLLog(saveLogFileDialog.FileName);
             }
         }
-
     }
 }

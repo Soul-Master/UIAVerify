@@ -124,9 +124,6 @@
   <data name="elemTypeGeneralLive" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\elemTypeGeneralLive.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FullDetailResultsXsltTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>TestResultTemlates\FullDetailResultsXsltTemplate.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="gotoForward" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\gotoForward.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,9 +144,6 @@
   </data>
   <data name="gotoprevsibling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\gotoprevsibling.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OverallResultsXsltTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>TestResultTemlates\OverallResultsXsltTemplate.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="elemtyperefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\elemtyperefresh.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,14 +169,8 @@
   <data name="arrowDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\arrowDown.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TestResultsXsltTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>TestResultTemlates\TestResultsXsltTemplate.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="arrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\arrowRight.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TestLogXsltTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>TestResultTemlates\TestLogXsltTemplate.xslt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="testToRun1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>icons\testToRun.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

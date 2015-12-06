@@ -40,8 +40,8 @@ namespace VisualUIAVerify.Forms
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.UnmanagedProxiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveLogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.highlightingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rectangleHighlightingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,19 +62,10 @@ namespace VisualUIAVerify.Forms
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.hoverModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.focusTrackingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.testsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goLeftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goDownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.goRightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.runSelectedTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.filterKnownIssuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();			
-            this.openFilterFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.saveLogFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutVisualUIAVerifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFilterFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.saveLogFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._messageToolStrip = new System.Windows.Forms.ToolStripStatusLabel();
             this._progressToolStrip = new System.Windows.Forms.ToolStripProgressBar();
@@ -91,7 +82,6 @@ namespace VisualUIAVerify.Forms
             this.goToLastChildToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.FocusTrackingToolStripMenuItem = new System.Windows.Forms.ToolStripButton();
-            this.splitter2 = new System.Windows.Forms.Splitter();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this._automationElementPropertyGrid = new VisualUIAVerify.Controls.AutomationElementPropertyGrid();
             this.toolStrip5 = new System.Windows.Forms.ToolStrip();
@@ -102,48 +92,6 @@ namespace VisualUIAVerify.Forms
             this.toolStripButton4 = new System.Windows.Forms.ToolStripSeparator();
             this.expandAllToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.splitter3 = new System.Windows.Forms.Splitter();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this._automationTests = new VisualUIAVerify.Controls.AutomationTestsControl();
-            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.refreshTestsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.testsScopeToolStrip = new System.Windows.Forms.ToolStripDropDownButton();
-            this.testsForSelectedAutomationElementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.allTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.testTypesMenuToolStrip = new System.Windows.Forms.ToolStripDropDownButton();
-            this.automationElementTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.patternTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.controlTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testPrioritiesToolStrip = new System.Windows.Forms.ToolStripDropDownButton();
-            this.buildVerificationTestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.priority0TestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.priority1TestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.priority2TestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.priority3TestsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator11 = new System.Windows.Forms.ToolStripSeparator();
-            this.goLeftToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.goUpToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.goDownToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.goRightToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.runTestToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.runTestOnAllChildrenToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.splitter4 = new System.Windows.Forms.Splitter();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this._testResults = new VisualUIAVerify.Controls.TestResultsControl();
-            this._testResultsToolStrip = new System.Windows.Forms.ToolStrip();
-            this.backToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.forwardToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.overallToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.allResultsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.FullDetailToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.xmlToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.quickFindToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.openInNewWindowToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip4 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -153,10 +101,6 @@ namespace VisualUIAVerify.Forms
             this.toolStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.toolStrip5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.toolStrip2.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this._testResultsToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -166,7 +110,6 @@ namespace VisualUIAVerify.Forms
             this.viewToolStripMenuItem,
             this.automationElementTreeToolStripMenuItem,
             this.modeToolStripMenuItem,
-            this.testsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -191,27 +134,19 @@ namespace VisualUIAVerify.Forms
             this.UnmanagedProxiesToolStripMenuItem.Text = "Remove Client Side Provider";
             this.UnmanagedProxiesToolStripMenuItem.Click += new System.EventHandler(this.UnmanagedProxiesToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // saveLogToolStripMenuItem
             // 
             this.saveLogToolStripMenuItem.Name = "saveLogToolStripMenuItem";
             this.saveLogToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.saveLogToolStripMenuItem.Text = "Save Log";
             this.saveLogToolStripMenuItem.Click += new System.EventHandler(this.saveLogToolStripMenuItem_Click);
-
             // 
-            // saveLogFileDialog
+            // exitToolStripMenuItem
             // 
-            this.saveLogFileDialog.Filter = "XML files|*.xml";            
-            this.saveLogFileDialog.RestoreDirectory = true;
-            this.saveLogFileDialog.DefaultExt = "xml";
-
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -275,7 +210,7 @@ namespace VisualUIAVerify.Forms
             this.refreshToolStripMenuItem,
             this.navigationToolStripMenuItem1});
             this.automationElementTreeToolStripMenuItem.Name = "automationElementTreeToolStripMenuItem";
-            this.automationElementTreeToolStripMenuItem.Size = new System.Drawing.Size(155, 20);
+            this.automationElementTreeToolStripMenuItem.Size = new System.Drawing.Size(154, 20);
             this.automationElementTreeToolStripMenuItem.Text = "&Automation Element Tree";
             // 
             // refreshToolStripMenuItem
@@ -387,92 +322,6 @@ namespace VisualUIAVerify.Forms
             this.focusTrackingToolStripMenuItem1.Text = "&Focus Tracking";
             this.focusTrackingToolStripMenuItem1.Click += new System.EventHandler(this.focusTrackingToolStripMenuItem1_Click);
             // 
-            // testsToolStripMenuItem
-            // 
-            this.testsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.goLeftToolStripMenuItem,
-            this.goUpToolStripMenuItem,
-            this.goDownToolStripMenuItem,
-            this.goRightToolStripMenuItem,
-            this.toolStripSeparator13,
-            this.runSelectedTestToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.filterKnownIssuesToolStripMenuItem});
-            this.testsToolStripMenuItem.Name = "testsToolStripMenuItem";
-            this.testsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.testsToolStripMenuItem.Text = "&Tests";
-            // 
-            // goLeftToolStripMenuItem
-            // 
-            this.goLeftToolStripMenuItem.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowLeft;
-            this.goLeftToolStripMenuItem.Name = "goLeftToolStripMenuItem";
-            this.goLeftToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+7";
-            this.goLeftToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.goLeftToolStripMenuItem.Text = "Go &Left";
-            this.goLeftToolStripMenuItem.Click += new System.EventHandler(this.testArrowToolStripMenuItem_Click);
-            // 
-            // goUpToolStripMenuItem
-            // 
-            this.goUpToolStripMenuItem.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowUp;
-            this.goUpToolStripMenuItem.Name = "goUpToolStripMenuItem";
-            this.goUpToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+8";
-            this.goUpToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.goUpToolStripMenuItem.Text = "Go &Up";
-            this.goUpToolStripMenuItem.Click += new System.EventHandler(this.testArrowToolStripMenuItem_Click);
-            // 
-            // goDownToolStripMenuItem
-            // 
-            this.goDownToolStripMenuItem.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowDown;
-            this.goDownToolStripMenuItem.Name = "goDownToolStripMenuItem";
-            this.goDownToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+9";
-            this.goDownToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.goDownToolStripMenuItem.Text = "Go &Down";
-            this.goDownToolStripMenuItem.Click += new System.EventHandler(this.testArrowToolStripMenuItem_Click);
-            // 
-            // goRightToolStripMenuItem
-            // 
-            this.goRightToolStripMenuItem.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowRight;
-            this.goRightToolStripMenuItem.Name = "goRightToolStripMenuItem";
-            this.goRightToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+Shift+0";
-            this.goRightToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.goRightToolStripMenuItem.Text = "Go &Right";
-            this.goRightToolStripMenuItem.Click += new System.EventHandler(this.testArrowToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator13
-            // 
-            this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(360, 6);
-            // 
-            // runSelectedTestToolStripMenuItem
-            // 
-            this.runSelectedTestToolStripMenuItem.Image = global::VisualUIAVerify.VisualUIAVerifyResources.testToRun;
-            this.runSelectedTestToolStripMenuItem.Name = "runSelectedTestToolStripMenuItem";
-            this.runSelectedTestToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.R)));
-            this.runSelectedTestToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.runSelectedTestToolStripMenuItem.Text = "Run &Selected Test(s) on Selected Element";
-            this.runSelectedTestToolStripMenuItem.Click += new System.EventHandler(this.runSelectedTestToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(360, 6);
-            // 
-            // filterKnownIssuesToolStripMenuItem
-            // 
-            this.filterKnownIssuesToolStripMenuItem.Checked = true;
-            this.filterKnownIssuesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.filterKnownIssuesToolStripMenuItem.Name = "filterKnownIssuesToolStripMenuItem";
-            this.filterKnownIssuesToolStripMenuItem.Size = new System.Drawing.Size(363, 22);
-            this.filterKnownIssuesToolStripMenuItem.Text = "Filter Known Problems";
-            this.filterKnownIssuesToolStripMenuItem.Click += new System.EventHandler(this.filterKnownIssuesToolStripMenuItem_Click);
-            // 
-            // openFilterFileDialog
-            // 
-            this.openFilterFileDialog.Filter = "XML files|*.xml";
-            this.openFilterFileDialog.Multiselect = false;
-            this.openFilterFileDialog.RestoreDirectory = true;
-            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -484,9 +333,20 @@ namespace VisualUIAVerify.Forms
             // aboutVisualUIAVerifyToolStripMenuItem
             // 
             this.aboutVisualUIAVerifyToolStripMenuItem.Name = "aboutVisualUIAVerifyToolStripMenuItem";
-            this.aboutVisualUIAVerifyToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
+            this.aboutVisualUIAVerifyToolStripMenuItem.Size = new System.Drawing.Size(257, 22);
             this.aboutVisualUIAVerifyToolStripMenuItem.Text = "&About Visual UI Automation Verify.";
             this.aboutVisualUIAVerifyToolStripMenuItem.Click += new System.EventHandler(this.aboutVisualUIAVerifyToolStripMenuItem_Click);
+            // 
+            // openFilterFileDialog
+            // 
+            this.openFilterFileDialog.Filter = "XML files|*.xml";
+            this.openFilterFileDialog.RestoreDirectory = true;
+            // 
+            // saveLogFileDialog
+            // 
+            this.saveLogFileDialog.DefaultExt = "xml";
+            this.saveLogFileDialog.Filter = "XML files|*.xml";
+            this.saveLogFileDialog.RestoreDirectory = true;
             // 
             // statusStrip1
             // 
@@ -640,27 +500,19 @@ namespace VisualUIAVerify.Forms
             this.FocusTrackingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FocusTrackingToolStripMenuItem.Image")));
             this.FocusTrackingToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.FocusTrackingToolStripMenuItem.Name = "FocusTrackingToolStripMenuItem";
-            this.FocusTrackingToolStripMenuItem.Size = new System.Drawing.Size(91, 22);
+            this.FocusTrackingToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
             this.FocusTrackingToolStripMenuItem.Text = "Focus Tracking";
             this.FocusTrackingToolStripMenuItem.Visible = false;
             this.FocusTrackingToolStripMenuItem.Click += new System.EventHandler(this.FocusTrackingToolStripMenuItem_CheckedChanged);
-            // 
-            // splitter2
-            // 
-            this.splitter2.Location = new System.Drawing.Point(316, 24);
-            this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(5, 639);
-            this.splitter2.TabIndex = 5;
-            this.splitter2.TabStop = false;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this._automationElementPropertyGrid);
             this.groupBox3.Controls.Add(this.toolStrip5);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox3.Location = new System.Drawing.Point(832, 24);
+            this.groupBox3.Location = new System.Drawing.Point(707, 24);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 639);
+            this.groupBox3.Size = new System.Drawing.Size(325, 639);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Properties";
@@ -671,7 +523,7 @@ namespace VisualUIAVerify.Forms
             this._automationElementPropertyGrid.Location = new System.Drawing.Point(3, 41);
             this._automationElementPropertyGrid.Name = "_automationElementPropertyGrid";
             this._automationElementPropertyGrid.PropertySort = System.Windows.Forms.PropertySort.CategorizedAlphabetical;
-            this._automationElementPropertyGrid.Size = new System.Drawing.Size(194, 595);
+            this._automationElementPropertyGrid.Size = new System.Drawing.Size(319, 595);
             this._automationElementPropertyGrid.TabIndex = 0;
             // 
             // toolStrip5
@@ -686,7 +538,7 @@ namespace VisualUIAVerify.Forms
             this.expandAllToolStripButton});
             this.toolStrip5.Location = new System.Drawing.Point(3, 16);
             this.toolStrip5.Name = "toolStrip5";
-            this.toolStrip5.Size = new System.Drawing.Size(194, 25);
+            this.toolStrip5.Size = new System.Drawing.Size(319, 25);
             this.toolStrip5.TabIndex = 1;
             this.toolStrip5.Text = "toolStrip5";
             // 
@@ -755,443 +607,11 @@ namespace VisualUIAVerify.Forms
             // splitter3
             // 
             this.splitter3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter3.Location = new System.Drawing.Point(827, 24);
+            this.splitter3.Location = new System.Drawing.Point(702, 24);
             this.splitter3.Name = "splitter3";
             this.splitter3.Size = new System.Drawing.Size(5, 639);
             this.splitter3.TabIndex = 7;
             this.splitter3.TabStop = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this._automationTests);
-            this.groupBox4.Controls.Add(this.toolStrip2);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox4.Location = new System.Drawing.Point(321, 24);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(506, 286);
-            this.groupBox4.TabIndex = 8;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Tests";
-            // 
-            // _automationTests
-            // 
-            this._automationTests.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._automationTests.Location = new System.Drawing.Point(3, 41);
-            this._automationTests.Name = "_automationTests";
-            this._automationTests.Priorities = VisualUIAVerify.TestPriorities.None;
-            this._automationTests.Scope = VisualUIAVerify.TestsScope.SelectedElementTests;
-            this._automationTests.SelectedElement = null;
-            this._automationTests.Size = new System.Drawing.Size(500, 242);
-            this._automationTests.TabIndex = 2;
-            this._automationTests.Types = VisualUIAVerify.TestTypes.None;
-            this._automationTests.RunTestOnAllChildrenRequired += new System.EventHandler(this._automationTests_RunTestOnAllChildrenRequired);
-            this._automationTests.RunTestRequired += new System.EventHandler(this._automationTests_RunTestRequired);
-            // 
-            // toolStrip2
-            // 
-            this.toolStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshTestsToolStripButton,
-            this.toolStripSeparator14,
-            this.testsScopeToolStrip,
-            this.toolStripSeparator4,
-            this.testTypesMenuToolStrip,
-            this.testPrioritiesToolStrip,
-            this.toolStripSeparator11,
-            this.goLeftToolStripButton,
-            this.goUpToolStripButton,
-            this.goDownToolStripButton,
-            this.goRightToolStripButton,
-            this.toolStripSeparator12,
-            this.runTestToolStripButton,
-            this.runTestOnAllChildrenToolStripButton});
-            this.toolStrip2.Location = new System.Drawing.Point(3, 16);
-            this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(500, 25);
-            this.toolStrip2.TabIndex = 0;
-            this.toolStrip2.Text = "toolStrip2";
-            // 
-            // refreshTestsToolStripButton
-            // 
-            this.refreshTestsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.refreshTestsToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.elemtyperefresh;
-            this.refreshTestsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.refreshTestsToolStripButton.Name = "refreshTestsToolStripButton";
-            this.refreshTestsToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.refreshTestsToolStripButton.Text = "Refresh Tests (reload test libraries)";
-            this.refreshTestsToolStripButton.Visible = false;
-            this.refreshTestsToolStripButton.Click += new System.EventHandler(this.refreshTestsToolStripButton_Click);
-            // 
-            // toolStripSeparator14
-            // 
-            this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(6, 25);
-            this.toolStripSeparator14.Visible = false;
-            // 
-            // testsScopeToolStrip
-            // 
-            this.testsScopeToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.testsScopeToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.testsForSelectedAutomationElementToolStripMenuItem,
-            this.allTestsToolStripMenuItem});
-            this.testsScopeToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("testsScopeToolStrip.Image")));
-            this.testsScopeToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.testsScopeToolStrip.Name = "testsScopeToolStrip";
-            this.testsScopeToolStrip.Size = new System.Drawing.Size(49, 22);
-            this.testsScopeToolStrip.Text = "Show";
-            // 
-            // testsForSelectedAutomationElementToolStripMenuItem
-            // 
-            this.testsForSelectedAutomationElementToolStripMenuItem.Checked = true;
-            this.testsForSelectedAutomationElementToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.testsForSelectedAutomationElementToolStripMenuItem.Name = "testsForSelectedAutomationElementToolStripMenuItem";
-            this.testsForSelectedAutomationElementToolStripMenuItem.Size = new System.Drawing.Size(279, 22);
-            this.testsForSelectedAutomationElementToolStripMenuItem.Text = "Tests for Selected Automation Element";
-            this.testsForSelectedAutomationElementToolStripMenuItem.Click += new System.EventHandler(this.testsScopeToolStrip_Click);
-            // 
-            // allTestsToolStripMenuItem
-            // 
-            this.allTestsToolStripMenuItem.Name = "allTestsToolStripMenuItem";
-            this.allTestsToolStripMenuItem.Size = new System.Drawing.Size(279, 22);
-            this.allTestsToolStripMenuItem.Text = "All Tests";
-            this.allTestsToolStripMenuItem.Click += new System.EventHandler(this.testsScopeToolStrip_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // testTypesMenuToolStrip
-            // 
-            this.testTypesMenuToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.testTypesMenuToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.automationElementTestsToolStripMenuItem,
-            this.patternTestsToolStripMenuItem,
-            this.controlTestsToolStripMenuItem});
-            this.testTypesMenuToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("testTypesMenuToolStrip.Image")));
-            this.testTypesMenuToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.testTypesMenuToolStrip.Name = "testTypesMenuToolStrip";
-            this.testTypesMenuToolStrip.Size = new System.Drawing.Size(46, 22);
-            this.testTypesMenuToolStrip.Text = "Type";
-            // 
-            // automationElementTestsToolStripMenuItem
-            // 
-            this.automationElementTestsToolStripMenuItem.Checked = true;
-            this.automationElementTestsToolStripMenuItem.CheckOnClick = true;
-            this.automationElementTestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.automationElementTestsToolStripMenuItem.Name = "automationElementTestsToolStripMenuItem";
-            this.automationElementTestsToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.automationElementTestsToolStripMenuItem.Text = "Automation Element Tests";
-            this.automationElementTestsToolStripMenuItem.Click += new System.EventHandler(this.testTypesMenuToolStrip_Click);
-            // 
-            // patternTestsToolStripMenuItem
-            // 
-            this.patternTestsToolStripMenuItem.Checked = true;
-            this.patternTestsToolStripMenuItem.CheckOnClick = true;
-            this.patternTestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.patternTestsToolStripMenuItem.Name = "patternTestsToolStripMenuItem";
-            this.patternTestsToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.patternTestsToolStripMenuItem.Text = "PatternTests";
-            this.patternTestsToolStripMenuItem.Click += new System.EventHandler(this.testTypesMenuToolStrip_Click);
-            // 
-            // controlTestsToolStripMenuItem
-            // 
-            this.controlTestsToolStripMenuItem.Checked = true;
-            this.controlTestsToolStripMenuItem.CheckOnClick = true;
-            this.controlTestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.controlTestsToolStripMenuItem.Name = "controlTestsToolStripMenuItem";
-            this.controlTestsToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
-            this.controlTestsToolStripMenuItem.Text = "Control Tests";
-            this.controlTestsToolStripMenuItem.Click += new System.EventHandler(this.testTypesMenuToolStrip_Click);
-            // 
-            // testPrioritiesToolStrip
-            // 
-            this.testPrioritiesToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.testPrioritiesToolStrip.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buildVerificationTestsToolStripMenuItem,
-            this.priority0TestsToolStripMenuItem,
-            this.priority1TestsToolStripMenuItem,
-            this.priority2TestsToolStripMenuItem,
-            this.priority3TestsToolStripMenuItem});
-            this.testPrioritiesToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("testPrioritiesToolStrip.Image")));
-            this.testPrioritiesToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.testPrioritiesToolStrip.Name = "testPrioritiesToolStrip";
-            this.testPrioritiesToolStrip.Size = new System.Drawing.Size(66, 22);
-            this.testPrioritiesToolStrip.Text = "Priorities";
-            // 
-            // buildVerificationTestsToolStripMenuItem
-            // 
-            this.buildVerificationTestsToolStripMenuItem.Checked = true;
-            this.buildVerificationTestsToolStripMenuItem.CheckOnClick = true;
-            this.buildVerificationTestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.buildVerificationTestsToolStripMenuItem.Name = "buildVerificationTestsToolStripMenuItem";
-            this.buildVerificationTestsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.buildVerificationTestsToolStripMenuItem.Text = "Build Verification Tests";
-            this.buildVerificationTestsToolStripMenuItem.Click += new System.EventHandler(this.testPrioritiesToolStrip_Click);
-            // 
-            // priority0TestsToolStripMenuItem
-            // 
-            this.priority0TestsToolStripMenuItem.Checked = true;
-            this.priority0TestsToolStripMenuItem.CheckOnClick = true;
-            this.priority0TestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.priority0TestsToolStripMenuItem.Name = "priority0TestsToolStripMenuItem";
-            this.priority0TestsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.priority0TestsToolStripMenuItem.Text = "Priority 0 Tests";
-            this.priority0TestsToolStripMenuItem.Click += new System.EventHandler(this.testPrioritiesToolStrip_Click);
-            // 
-            // priority1TestsToolStripMenuItem
-            // 
-            this.priority1TestsToolStripMenuItem.Checked = true;
-            this.priority1TestsToolStripMenuItem.CheckOnClick = true;
-            this.priority1TestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.priority1TestsToolStripMenuItem.Name = "priority1TestsToolStripMenuItem";
-            this.priority1TestsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.priority1TestsToolStripMenuItem.Text = "Priority 1 Tests";
-            this.priority1TestsToolStripMenuItem.Click += new System.EventHandler(this.testPrioritiesToolStrip_Click);
-            // 
-            // priority2TestsToolStripMenuItem
-            // 
-            this.priority2TestsToolStripMenuItem.Checked = true;
-            this.priority2TestsToolStripMenuItem.CheckOnClick = true;
-            this.priority2TestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.priority2TestsToolStripMenuItem.Name = "priority2TestsToolStripMenuItem";
-            this.priority2TestsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.priority2TestsToolStripMenuItem.Text = "Priority 2 Tests";
-            this.priority2TestsToolStripMenuItem.Click += new System.EventHandler(this.testPrioritiesToolStrip_Click);
-            // 
-            // priority3TestsToolStripMenuItem
-            // 
-            this.priority3TestsToolStripMenuItem.Checked = true;
-            this.priority3TestsToolStripMenuItem.CheckOnClick = true;
-            this.priority3TestsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.priority3TestsToolStripMenuItem.Name = "priority3TestsToolStripMenuItem";
-            this.priority3TestsToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
-            this.priority3TestsToolStripMenuItem.Text = "Priority 3 Tests";
-            this.priority3TestsToolStripMenuItem.Click += new System.EventHandler(this.testPrioritiesToolStrip_Click);
-            // 
-            // toolStripSeparator11
-            // 
-            this.toolStripSeparator11.Name = "toolStripSeparator11";
-            this.toolStripSeparator11.Size = new System.Drawing.Size(6, 25);
-            // 
-            // goLeftToolStripButton
-            // 
-            this.goLeftToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goLeftToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowLeft;
-            this.goLeftToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.goLeftToolStripButton.Name = "goLeftToolStripButton";
-            this.goLeftToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.goLeftToolStripButton.Text = "Go Left";
-            this.goLeftToolStripButton.ToolTipText = "Go Left (Ctrl+Shift+7)";
-            this.goLeftToolStripButton.Click += new System.EventHandler(this.testArrowButton_Click);
-            // 
-            // goUpToolStripButton
-            // 
-            this.goUpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goUpToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowUp;
-            this.goUpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.goUpToolStripButton.Name = "goUpToolStripButton";
-            this.goUpToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.goUpToolStripButton.Text = "Go Up";
-            this.goUpToolStripButton.ToolTipText = "Go Up (Ctrl+Shift+8)";
-            this.goUpToolStripButton.Click += new System.EventHandler(this.testArrowButton_Click);
-            // 
-            // goDownToolStripButton
-            // 
-            this.goDownToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goDownToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowDown;
-            this.goDownToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.goDownToolStripButton.Name = "goDownToolStripButton";
-            this.goDownToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.goDownToolStripButton.Text = "Go Down";
-            this.goDownToolStripButton.ToolTipText = "Go Down (Ctrl+Shift+9)";
-            this.goDownToolStripButton.Click += new System.EventHandler(this.testArrowButton_Click);
-            // 
-            // goRightToolStripButton
-            // 
-            this.goRightToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.goRightToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.arrowRight;
-            this.goRightToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.goRightToolStripButton.Name = "goRightToolStripButton";
-            this.goRightToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.goRightToolStripButton.Text = "Go Right";
-            this.goRightToolStripButton.ToolTipText = "Go Right (Ctrl+Shift+0)";
-            this.goRightToolStripButton.Click += new System.EventHandler(this.testArrowButton_Click);
-            // 
-            // toolStripSeparator12
-            // 
-            this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(6, 25);
-            // 
-            // runTestToolStripButton
-            // 
-            this.runTestToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.runTestToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.testToRun;
-            this.runTestToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.runTestToolStripButton.Name = "runTestToolStripButton";
-            this.runTestToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.runTestToolStripButton.Text = "Run Selected Test(s)";
-            this.runTestToolStripButton.Click += new System.EventHandler(this.runTestToolStripButton_Click);
-            // 
-            // runTestOnAllChildrenToolStripButton
-            // 
-            this.runTestOnAllChildrenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.runTestOnAllChildrenToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.testToRunWithChildren;
-            this.runTestOnAllChildrenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.runTestOnAllChildrenToolStripButton.Name = "runTestOnAllChildrenToolStripButton";
-            this.runTestOnAllChildrenToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.runTestOnAllChildrenToolStripButton.Text = "Run Selected Test On Selected Element and All Children Elements";
-            this.runTestOnAllChildrenToolStripButton.Visible = false;
-            this.runTestOnAllChildrenToolStripButton.Click += new System.EventHandler(this.runTestOnAllChildrenToolStripButton_Click);
-            // 
-            // splitter4
-            // 
-            this.splitter4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter4.Location = new System.Drawing.Point(321, 310);
-            this.splitter4.Name = "splitter4";
-            this.splitter4.Size = new System.Drawing.Size(506, 5);
-            this.splitter4.TabIndex = 9;
-            this.splitter4.TabStop = false;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this._testResults);
-            this.groupBox5.Controls.Add(this._testResultsToolStrip);
-            this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(321, 315);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(506, 348);
-            this.groupBox5.TabIndex = 10;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Test Results";
-            // 
-            // _testResults
-            // 
-            this._testResults.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._testResults.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._testResults.Location = new System.Drawing.Point(3, 41);
-            this._testResults.Name = "_testResults";
-            this._testResults.Size = new System.Drawing.Size(500, 304);
-            this._testResults.TabIndex = 1;
-            this._testResults.NavigationChanged += new VisualUIAVerify.Controls.NavigationChangedEventHandler(this._testResults_NavigationChanged);
-            // 
-            // _testResultsToolStrip
-            // 
-            this._testResultsToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this._testResultsToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.backToolStripButton,
-            this.forwardToolStripButton,
-            this.toolStripSeparator6,
-            this.overallToolStripButton,
-            this.allResultsToolStripButton,
-            this.FullDetailToolStripButton,
-            this.xmlToolStripButton,
-            this.toolStripSeparator7,
-            this.quickFindToolStripButton,
-            this.toolStripSeparator8,
-            this.openInNewWindowToolStripButton});
-            this._testResultsToolStrip.Location = new System.Drawing.Point(3, 16);
-            this._testResultsToolStrip.Name = "_testResultsToolStrip";
-            this._testResultsToolStrip.Size = new System.Drawing.Size(500, 25);
-            this._testResultsToolStrip.TabIndex = 0;
-            this._testResultsToolStrip.Text = "toolStrip4";
-            // 
-            // backToolStripButton
-            // 
-            this.backToolStripButton.Enabled = false;
-            this.backToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("backToolStripButton.Image")));
-            this.backToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.backToolStripButton.Name = "backToolStripButton";
-            this.backToolStripButton.Size = new System.Drawing.Size(52, 22);
-            this.backToolStripButton.Text = "Back";
-            this.backToolStripButton.Click += new System.EventHandler(this.backToolStripButton_Click);
-            // 
-            // forwardToolStripButton
-            // 
-            this.forwardToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.forwardToolStripButton.Enabled = false;
-            this.forwardToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("forwardToolStripButton.Image")));
-            this.forwardToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.forwardToolStripButton.Name = "forwardToolStripButton";
-            this.forwardToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.forwardToolStripButton.Text = "Forward";
-            this.forwardToolStripButton.Click += new System.EventHandler(this.forwardToolStripButton_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
-            // 
-            // overallToolStripButton
-            // 
-            this.overallToolStripButton.Checked = true;
-            this.overallToolStripButton.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.overallToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.overallToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("overallToolStripButton.Image")));
-            this.overallToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.overallToolStripButton.Name = "overallToolStripButton";
-            this.overallToolStripButton.Size = new System.Drawing.Size(48, 22);
-            this.overallToolStripButton.Text = "Overall";
-            this.overallToolStripButton.Click += new System.EventHandler(this._testResultsToolStrip_ButtonClick);
-            // 
-            // allResultsToolStripButton
-            // 
-            this.allResultsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.allResultsToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("allResultsToolStripButton.Image")));
-            this.allResultsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.allResultsToolStripButton.Name = "allResultsToolStripButton";
-            this.allResultsToolStripButton.Size = new System.Drawing.Size(65, 22);
-            this.allResultsToolStripButton.Text = "All Results";
-            this.allResultsToolStripButton.Click += new System.EventHandler(this._testResultsToolStrip_ButtonClick);
-            // 
-            // FullDetailToolStripButton
-            // 
-            this.FullDetailToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.FullDetailToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("FullDetailToolStripButton.Image")));
-            this.FullDetailToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.FullDetailToolStripButton.Name = "FullDetailToolStripButton";
-            this.FullDetailToolStripButton.Size = new System.Drawing.Size(53, 22);
-            this.FullDetailToolStripButton.Text = "Full Log";
-            this.FullDetailToolStripButton.Click += new System.EventHandler(this._testResultsToolStrip_ButtonClick);
-            // 
-            // xmlToolStripButton
-            // 
-            this.xmlToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.xmlToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("xmlToolStripButton.Image")));
-            this.xmlToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.xmlToolStripButton.Name = "xmlToolStripButton";
-            this.xmlToolStripButton.Size = new System.Drawing.Size(35, 22);
-            this.xmlToolStripButton.Text = "XML";
-            this.xmlToolStripButton.Click += new System.EventHandler(this._testResultsToolStrip_ButtonClick);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
-            // 
-            // quickFindToolStripButton
-            // 
-            this.quickFindToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.quickFind;
-            this.quickFindToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.quickFindToolStripButton.Name = "quickFindToolStripButton";
-            this.quickFindToolStripButton.Size = new System.Drawing.Size(84, 22);
-            this.quickFindToolStripButton.Text = "Quick Find";
-            this.quickFindToolStripButton.Click += new System.EventHandler(this.quickFindToolStripButton_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(6, 25);
-            // 
-            // openInNewWindowToolStripButton
-            // 
-            this.openInNewWindowToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openInNewWindowToolStripButton.Image = global::VisualUIAVerify.VisualUIAVerifyResources.ieIcon;
-            this.openInNewWindowToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openInNewWindowToolStripButton.Name = "openInNewWindowToolStripButton";
-            this.openInNewWindowToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openInNewWindowToolStripButton.Text = "Open in new window";
-            this.openInNewWindowToolStripButton.Click += new System.EventHandler(this.openInNewWindowToolStripButton_Click);
             // 
             // toolStripButton2
             // 
@@ -1225,12 +645,8 @@ namespace VisualUIAVerify.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 685);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.splitter4);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.splitter3);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.splitter2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.statusStrip1);
@@ -1249,14 +665,6 @@ namespace VisualUIAVerify.Forms
             this.groupBox3.PerformLayout();
             this.toolStrip5.ResumeLayout(false);
             this.toolStrip5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.toolStrip2.ResumeLayout(false);
-            this.toolStrip2.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this._testResultsToolStrip.ResumeLayout(false);
-            this._testResultsToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1272,7 +680,6 @@ namespace VisualUIAVerify.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private VisualUIAVerify.Controls.AutomationElementTreeControl _automationElementTree;
-        private System.Windows.Forms.Splitter splitter2;
         private System.Windows.Forms.ToolStripStatusLabel _messageToolStrip;
         private System.Windows.Forms.ToolStripProgressBar _progressToolStrip;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
@@ -1284,9 +691,6 @@ namespace VisualUIAVerify.Forms
         private System.Windows.Forms.ToolStripMenuItem noneHighlightingToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Splitter splitter3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Splitter splitter4;
-        private System.Windows.Forms.GroupBox groupBox5;
         private Controls.AutomationElementPropertyGrid _automationElementPropertyGrid;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton goToParentToolStripButton;
@@ -1295,42 +699,14 @@ namespace VisualUIAVerify.Forms
         private System.Windows.Forms.ToolStripButton goToPrevSiblingToolStripButton;
         private System.Windows.Forms.ToolStripButton goToLastChildToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStrip _testResultsToolStrip;
         private System.Windows.Forms.ToolStrip toolStrip5;
-        private VisualUIAVerify.Controls.TestResultsControl _testResults;
         private System.Windows.Forms.ToolStripMenuItem modeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alwaysOnTopToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hoverModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton FocusTrackingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripDropDownButton testsScopeToolStrip;
-        private System.Windows.Forms.ToolStripMenuItem testsForSelectedAutomationElementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem allTestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripDropDownButton testTypesMenuToolStrip;
-        private System.Windows.Forms.ToolStripMenuItem automationElementTestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem patternTestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem controlTestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripDropDownButton testPrioritiesToolStrip;
-        private System.Windows.Forms.ToolStripMenuItem buildVerificationTestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem priority0TestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem priority1TestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem priority2TestsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem priority3TestsToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStrip toolStrip4;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton overallToolStripButton;
-        private System.Windows.Forms.ToolStripButton FullDetailToolStripButton;
-        private System.Windows.Forms.ToolStripButton xmlToolStripButton;
-        private System.Windows.Forms.ToolStripButton allResultsToolStripButton;
-        private System.Windows.Forms.ToolStripButton backToolStripButton;
-        private System.Windows.Forms.ToolStripButton forwardToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripButton quickFindToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
-        private System.Windows.Forms.ToolStripButton openInNewWindowToolStripButton;
         private System.Windows.Forms.ToolStripButton showCategoriesToolStripButton;
         private System.Windows.Forms.ToolStripButton sortAlphabeticalToolStripButton;
         private System.Windows.Forms.ToolStripButton refreshElementToolStripButton;
@@ -1345,36 +721,12 @@ namespace VisualUIAVerify.Forms
         private System.Windows.Forms.ToolStripMenuItem lastChildToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ToolStripMenuItem focusTrackingToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator11;
-        private System.Windows.Forms.ToolStripButton goLeftToolStripButton;
-        private System.Windows.Forms.ToolStripButton goUpToolStripButton;
-        private System.Windows.Forms.ToolStripButton goDownToolStripButton;
-        private System.Windows.Forms.ToolStripButton goRightToolStripButton;
-        private System.Windows.Forms.ToolStripMenuItem testsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem goLeftToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem goUpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem goDownToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem goRightToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
-        private System.Windows.Forms.ToolStripButton runTestToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
-        private System.Windows.Forms.ToolStripMenuItem runSelectedTestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton refreshTestsToolStripButton;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
         private System.Windows.Forms.ToolStripButton refreshPropertyPaneToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
         private System.Windows.Forms.ToolStripSeparator toolStripButton4;
         private System.Windows.Forms.ToolStripButton expandAllToolStripButton;
-        private System.Windows.Forms.ToolStripButton runTestOnAllChildrenToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutVisualUIAVerifyToolStripMenuItem;
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public VisualUIAVerify.Controls.AutomationTestsControl _automationTests;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem filterKnownIssuesToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFilterFileDialog;
         private System.Windows.Forms.ToolStripMenuItem UnmanagedProxiesToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveLogFileDialog;

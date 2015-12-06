@@ -141,16 +141,6 @@ namespace VisualUIAVerify {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-        ///&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-27T01:52:15&quot; xmlns:xd=&quot;http://schemas.microsoft.com/office/infopath/2003&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; xmlns:x=&quot;urn:schemas-microsoft-com:office:excel&quot; xmlns:xdExtension=&quot;http://schemas.microsoft.com/office/infopath/2003/xslt/extension&quot; xmlns:xdXDoc [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string FullDetailResultsXsltTemplate {
-            get {
-                return ResourceManager.GetString("FullDetailResultsXsltTemplate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap gotoBack {
@@ -251,42 +241,12 @@ namespace VisualUIAVerify {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-        ///&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-27T01:52:15&quot; xmlns:xd=&quot;http://schemas.microsoft.com/office/infopath/2003&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; xmlns:x=&quot;urn:schemas-microsoft-com:office:excel&quot; xmlns:xdExtension=&quot;http://schemas.microsoft.com/office/infopath/2003/xslt/extension&quot; xmlns:xdXDoc [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string OverallResultsXsltTemplate {
-            get {
-                return ResourceManager.GetString("OverallResultsXsltTemplate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap quickFind {
             get {
                 object obj = ResourceManager.GetObject("quickFind", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-        ///&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-10-11T21:18:04&quot; xmlns:xd=&quot;http://schemas.microsoft.com/office/infopath/2003&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; xmlns:x=&quot;urn:schemas-microsoft-com:office:excel&quot; xmlns:xdExtension=&quot;http://schemas.microsoft.com/office/infopath/2003/xslt/extension&quot; xmlns:xdXDoc [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string TestLogXsltTemplate {
-            get {
-                return ResourceManager.GetString("TestLogXsltTemplate", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-        ///&lt;xsl:stylesheet version=&quot;1.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:my=&quot;http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-28T19:28:22&quot; xmlns:xd=&quot;http://schemas.microsoft.com/office/infopath/2003&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:msxsl=&quot;urn:schemas-microsoft-com:xslt&quot; xmlns:x=&quot;urn:schemas-microsoft-com:office:excel&quot; xmlns:xdExtension=&quot;http://schemas.microsoft.com/offi [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string TestResultsXsltTemplate {
-            get {
-                return ResourceManager.GetString("TestResultsXsltTemplate", resourceCulture);
             }
         }
         

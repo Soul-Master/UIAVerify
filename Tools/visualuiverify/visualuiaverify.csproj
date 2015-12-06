@@ -132,31 +132,14 @@
     <Compile Include="Controls\AutomationElementTreeControlEvents.cs" />
     <Compile Include="Controls\AutomationElementTreeNode.cs" />
     <Compile Include="Controls\AutomationElementTreeNodeCollection.cs" />
-    <Compile Include="Controls\AutomationTestsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\AutomationTestsControl.Designer.cs">
-      <DependentUpon>AutomationTestsControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\TestResultsControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\TestResultsControl.Designer.cs">
-      <DependentUpon>TestResultsControl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\TestResultsControlEvents.cs" />
     <Compile Include="Features\AutomationElementPatternsPropertyObject.cs" />
     <Compile Include="Features\AutomationElementPropertyObject.cs">
     </Compile>
-    <Compile Include="Features\AutomationTest.cs" />
     <Compile Include="Features\ElementHighlighter.cs" />
-    <Compile Include="Features\AutomationTestsFilter.cs" />
     <Compile Include="Features\FocusTracer.cs" />
     <Compile Include="Controls\TreeHelper.cs" />
     <Compile Include="Features\HoverMode.cs" />
     <Compile Include="Features\LiveTreeNode.cs" />
-    <Compile Include="Features\AutomationTestsCollection.cs" />
-    <Compile Include="Features\AutomationTestManager.cs" />
     <Compile Include="Forms\AboutWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,12 +152,12 @@
     <Compile Include="Forms\MainWindow.Designer.cs">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RunningTestsWindow.cs">
+    <None Include="Forms\RunningTestsWindow.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RunningTestsWindow.Designer.cs">
+    </None>
+    <None Include="Forms\RunningTestsWindow.Designer.cs">
       <DependentUpon>RunningTestsWindow.cs</DependentUpon>
-    </Compile>
+    </None>
     <Compile Include="Misc\ApplicationLogger.cs" />
     <Compile Include="Misc\ApplicationState.cs" />
     <Compile Include="Misc\Enumerations.cs" />
@@ -228,10 +211,6 @@
     <Content Include="Icons\testSucceeded.ico" />
     <Content Include="Icons\testToRun.ico" />
     <Content Include="Icons\testUnexpectedException.ico" />
-    <Content Include="TestResultTemlates\TestLogXsltTemplate.xslt" />
-    <Content Include="TestResultTemlates\TestResultsXsltTemplate.xslt" />
-    <Content Include="TestResultTemlates\FullDetailResultsXsltTemplate.xslt" />
-    <Content Include="TestResultTemlates\OverallResultsXsltTemplate.xslt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\AutomationElementPropertyGrid.resx">
@@ -241,14 +220,6 @@
     <EmbeddedResource Include="Controls\AutomationElementTreeControl.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AutomationElementTreeControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\AutomationTestsControl.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>AutomationTestsControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\TestResultsControl.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>TestResultsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AboutWindow.resx">
       <SubType>Designer</SubType>
